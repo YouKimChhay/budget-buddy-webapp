@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/budget-buddy-webapp/static/css/main.6b64976e.css",
+    "main.js": "/budget-buddy-webapp/static/js/main.860ab184.js",
+    "static/media/sample-dashboard.png": "/budget-buddy-webapp/static/media/sample-dashboard.10f63f2883eb20544a08.png",
+    "index.html": "/budget-buddy-webapp/index.html",
+    "main.6b64976e.css.map": "/budget-buddy-webapp/static/css/main.6b64976e.css.map",
+    "main.860ab184.js.map": "/budget-buddy-webapp/static/js/main.860ab184.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6b64976e.css",
+    "static/js/main.860ab184.js"
+  ]
+}
