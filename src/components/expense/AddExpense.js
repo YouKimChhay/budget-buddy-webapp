@@ -77,7 +77,7 @@ export default function AddExpense() {
             <Form.Group as={Col} md="4">
                 <Form.Label>Choose a category below or create a new one</Form.Label>
                 <div>
-                    <Button variant={"secondary"} href={`${BASE_NAME}/addCategory`} style={{marginBottom: 15}}>Add Category</Button>
+                    <Button variant={"secondary"} href={`${BASE_NAME}#/addCategory`} style={{marginBottom: 15}}>Add Category</Button>
                 </div>
                 <Form.Select name="category" onChange={(event) => setSelectedCategory(event.target.value)}>
                     {

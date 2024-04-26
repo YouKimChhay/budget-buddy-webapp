@@ -20,7 +20,7 @@ export default function BillList() {
 
     const billListDiv = (
         <div style={{padding: 30}}>
-            <Button href={`${BASE_NAME}/addBill`}>New Bill</Button>
+            <Button href={`${BASE_NAME}#/addBill`}>New Bill</Button>
             <hr/>
             <h2>Bills</h2>
             <p>Click on the row to <span className={'text-decoration-underline'}>pay the bill</span> or <span

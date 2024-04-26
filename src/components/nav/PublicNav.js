@@ -11,8 +11,8 @@ export default function PublicNav() {
                     <Navbar.Brand href={`${BASE_NAME}`}>Budget Buddy</Navbar.Brand>
                     <Navbar.Collapse className="justify-content-end">
                         <Nav className="me-aut">
-                            <Nav.Link href={`${BASE_NAME}/register`}>Register</Nav.Link>
-                            <Nav.Link href={`${BASE_NAME}/login`}>Login</Nav.Link>
+                            <Nav.Link href={`${BASE_NAME}#/register`}>Register</Nav.Link>
+                            <Nav.Link href={`${BASE_NAME}#/login`}>Login</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

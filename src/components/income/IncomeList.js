@@ -20,7 +20,7 @@ export default function IncomeList() {
 
     const incomesDiv = (
         <div style={{padding: 30}}>
-            <Button href={`${BASE_NAME}/addIncome`}>New Income</Button>
+            <Button href={`${BASE_NAME}#/addIncome`}>New Income</Button>
             <hr/>
             <h2>Incomes</h2>
             <p>Click on the row to <span className={'text-decoration-underline'}>update</span> or <span

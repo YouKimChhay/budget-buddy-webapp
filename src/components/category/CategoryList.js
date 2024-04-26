@@ -20,7 +20,7 @@ export default function CategoryList() {
 
     const categoriesDiv = (
         <div style={{padding: 30}}>
-            <Button href={`${BASE_NAME}/addCategory`}>New Category</Button>
+            <Button href={`${BASE_NAME}#/addCategory`}>New Category</Button>
             <hr/>
             <h2>Categories</h2>
             <p>Click on the row to <span className={'text-decoration-underline'}>update</span> or <span

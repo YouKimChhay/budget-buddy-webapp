@@ -12,16 +12,16 @@ export default function LoginNav() {
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href={`${BASE_NAME}/incomes`}>Incomes</Nav.Link>
-                            <Nav.Link href={`${BASE_NAME}/categories`}>Categories</Nav.Link>
-                            <Nav.Link href={`${BASE_NAME}/expenses`}>Expenses</Nav.Link>
-                            <Nav.Link href={`${BASE_NAME}/bills`}>Bills</Nav.Link>
-                            <Nav.Link href={`${BASE_NAME}/savinggoals`}>Saving Goals</Nav.Link>
+                            <Nav.Link href={`${BASE_NAME}#/incomes`}>Incomes</Nav.Link>
+                            <Nav.Link href={`${BASE_NAME}#/categories`}>Categories</Nav.Link>
+                            <Nav.Link href={`${BASE_NAME}#/expenses`}>Expenses</Nav.Link>
+                            <Nav.Link href={`${BASE_NAME}#/bills`}>Bills</Nav.Link>
+                            <Nav.Link href={`${BASE_NAME}#/savinggoals`}>Saving Goals</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                     <Navbar.Collapse className="justify-content-end">
                         <Nav className="me-aut">
-                            <Nav.Link href={`${BASE_NAME}/logout`}>Logout</Nav.Link>
+                            <Nav.Link href={`${BASE_NAME}#/logout`}>Logout</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
