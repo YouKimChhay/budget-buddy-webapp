@@ -1,6 +1,7 @@
 import sampleDashboard from '../../assets/images/sample-dashboard.png';
 import {Card} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
+import {BASE_NAME} from "../../contants/constants";
 
 export default function PublicHome() {
 
@@ -31,7 +32,7 @@ export default function PublicHome() {
                             &#10004; Income tracking<br/>
                             &#10004; Expense management
                         </Card.Text>
-                        <Button variant="primary" href={'/register'}>Register</Button>
+                        <Button variant="primary" href={`${BASE_NAME}#/register`}>Register</Button>
                     </Card.Body>
                 </Card>
                 <Card style={{width: '250px', margin: '1em'}}>
@@ -44,7 +45,7 @@ export default function PublicHome() {
                             &#10004; Saving goals creation<br/>
                             &#10004; Basic analytics
                         </Card.Text>
-                        <Button variant="success" href={'/register'}>Buy Now</Button>
+                        <Button variant="success" href={`${BASE_NAME}#/register`}>Buy Now</Button>
                     </Card.Body>
                 </Card>
                 <Card style={{width: '250px', margin: '1em 0'}}>
