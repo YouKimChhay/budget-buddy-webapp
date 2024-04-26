@@ -26,7 +26,11 @@ export default function IncomeDetails() {
 
     useEffect(() => {
         IncomeService.getIncomeById(user.userId, user.accessToken, incomeId)
-            .then(response => setIncome(response.data.data))
+            .then(response => {
+                const incomeData = response.data.data;
+                setIncome(incomeData);
+                setPayDate(incomeData.payDate);
+            })
             .catch(() => navigate('/addIncome'))
     }, []);
 

@@ -5,6 +5,7 @@ import {useSelector} from "react-redux";
 import Main from "../home/Main";
 import ExpenseService from "../../services/ExpenseService";
 import CategoryService from "../../services/CategoryService";
+import {BASE_NAME} from "../../contants/constants";
 
 
 export default function ExpenseList() {
@@ -36,7 +37,7 @@ export default function ExpenseList() {
 
     const expenseListDiv = (
         <div style={{padding: 30}}>
-            <Button href={'/addExpense'}>New Expense</Button>
+            <Button href={`${BASE_NAME}/addExpense`}>New Expense</Button>
             <hr/>
             <div>
                 <ListGroup horizontal='md'>
@@ -49,7 +50,7 @@ export default function ExpenseList() {
                         ))
                     }
                 </ListGroup>
-                <Button variant={"secondary"} style={{marginTop: 15}} href={'/addCategory'}>New Category</Button>
+                <Button variant={"secondary"} style={{marginTop: 15}} href={`${BASE_NAME}/addCategory`}>New Category</Button>
             </div>
             <hr/>
             <h2>Expenses</h2>

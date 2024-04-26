@@ -4,6 +4,7 @@ import {Button, Table} from "react-bootstrap";
 import {useEffect, useState} from "react";
 import BillService from "../../services/BillService";
 import Bill from "./Bill";
+import {BASE_NAME} from "../../contants/constants";
 
 export default function BillList() {
 
@@ -19,7 +20,7 @@ export default function BillList() {
 
     const billListDiv = (
         <div style={{padding: 30}}>
-            <Button href={'/addBill'}>New Bill</Button>
+            <Button href={`${BASE_NAME}/addBill`}>New Bill</Button>
             <hr/>
             <h2>Bills</h2>
             <p>Click on the row to <span className={'text-decoration-underline'}>pay the bill</span> or <span

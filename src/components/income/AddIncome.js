@@ -37,6 +37,11 @@ export default function AddIncome() {
     const addIncome = event => {
         event.preventDefault();
 
+        if (payDate == null || payDate === "") {
+            setError("Input a pay date.");
+            return;
+        }
+
         newIncome.payDate = payDate;
 
         IncomeService.addNewIncome(user.userId, user.accessToken, newIncome)

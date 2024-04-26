@@ -4,6 +4,7 @@ import {useSelector} from "react-redux";
 import Main from "../home/Main";
 import CategoryService from "../../services/CategoryService";
 import Category from "./Category";
+import {BASE_NAME} from "../../contants/constants";
 
 
 export default function CategoryList() {
@@ -19,7 +20,7 @@ export default function CategoryList() {
 
     const categoriesDiv = (
         <div style={{padding: 30}}>
-            <Button href={'/addCategory'}>New Category</Button>
+            <Button href={`${BASE_NAME}/addCategory`}>New Category</Button>
             <hr/>
             <h2>Categories</h2>
             <p>Click on the row to <span className={'text-decoration-underline'}>update</span> or <span

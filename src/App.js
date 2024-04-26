@@ -1,4 +1,4 @@
-import {HashRouter, Route, Routes} from "react-router-dom";
+import {BrowserRouter, Route, Routes} from "react-router-dom";
 import IncomeList from "./components/income/IncomeList";
 import ExpenseList from "./components/expense/ExpenseList";
 import AddIncome from "./components/income/AddIncome";
@@ -19,6 +19,7 @@ import SavingGoalList from "./components/savinggoal/SavingGoalList";
 import BillList from "./components/bill/BillList";
 import AddBill from "./components/bill/AddBill";
 import BillDetails from "./components/bill/BillDetails";
+import {BASE_NAME} from "./contants/constants";
 
 function App() {
 
@@ -28,7 +29,7 @@ function App() {
         <>
             {isAuthenticated ? <LoginNav/> : <PublicNav/>}
             <div className="App">
-                <HashRouter>
+                <BrowserRouter basename={`${BASE_NAME}`}>
                     <Routes>
                         <Route path='/' element={<Main/>}/>
                         <Route path='/register' element={<Register/>}/>
@@ -55,7 +56,7 @@ function App() {
 
                         <Route path='*' element={<Main/>}/>
                     </Routes>
-                </HashRouter>
+                </BrowserRouter>
             </div>
         </>
     );

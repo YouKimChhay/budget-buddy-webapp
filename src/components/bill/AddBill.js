@@ -6,6 +6,7 @@ import {Col, Form} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Main from "../home/Main";
 import BillService from "../../services/BillService";
+import {BASE_NAME} from "../../contants/constants";
 
 export default function AddBill() {
 
@@ -57,7 +58,7 @@ export default function AddBill() {
                 <Form.Group as={Col} md="4">
                     <Form.Label>Choose a category below or create a new one</Form.Label>
                     <div>
-                        <Button variant={"secondary"} href={'/addCategory'} style={{marginBottom: 15}}>Add
+                        <Button variant={"secondary"} href={`${BASE_NAME}/addCategory`} style={{marginBottom: 15}}>Add
                             Category</Button>
                     </div>
                     <Form.Select name="category" onChange={(event) => setSelectedCategory(event.target.value)}>

@@ -9,6 +9,7 @@ import {useSelector} from "react-redux";
 import Main from "../home/Main";
 import CategoryService from "../../services/CategoryService";
 import ExpenseService from "../../services/ExpenseService";
+import {BASE_NAME} from "../../contants/constants";
 
 
 export default function AddExpense() {
@@ -48,6 +49,15 @@ export default function AddExpense() {
     const handleSubmit = event => {
         event.preventDefault();
 
+        if (paymentDate == null || paymentDate === "") {
+            setError("Input a payment date.");
+            return;
+        }
+        if (selectedCategory == null || selectedCategory === "") {
+            setError("Select a category or create a new one.");
+            return;
+        }
+
         newExpense.paymentDate = paymentDate;
         newExpense.category = {
             name: selectedCategory
@@ -67,7 +77,7 @@ export default function AddExpense() {
             <Form.Group as={Col} md="4">
                 <Form.Label>Choose a category below or create a new one</Form.Label>
                 <div>
-                    <Button variant={"secondary"} href={'/addCategory'} style={{marginBottom: 15}}>Add Category</Button>
+                    <Button variant={"secondary"} href={`${BASE_NAME}/addCategory`} style={{marginBottom: 15}}>Add Category</Button>
                 </div>
                 <Form.Select name="category" onChange={(event) => setSelectedCategory(event.target.value)}>
                     {

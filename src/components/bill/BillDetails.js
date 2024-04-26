@@ -7,6 +7,7 @@ import Button from "react-bootstrap/Button";
 import Main from "../home/Main";
 import BillService from "../../services/BillService";
 import ConfirmModal from "../modal/ConfirmModal";
+import {BASE_NAME} from "../../contants/constants";
 
 export default function BillDetails() {
 
@@ -88,7 +89,7 @@ export default function BillDetails() {
                     <p>Current Category is <span
                         style={{color: 'forestgreen', textDecoration: 'underline'}}>{selectedCategory}</span>.</p>
                     <div>
-                        <Button variant={"secondary"} href={'/addCategory'} style={{marginBottom: 15}}>Add
+                        <Button variant={"secondary"} href={`${BASE_NAME}/addCategory`} style={{marginBottom: 15}}>Add
                             Category</Button>
                     </div>
                     <Form.Select name="category" onChange={(event) => setSelectedCategory(event.target.value)}>
